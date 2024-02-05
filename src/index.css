@@ -2,7 +2,8 @@ html, body {
  margin: 0;
  padding: 0;
  font-family: monospace;
-background-color: #111212;
+ /* background-color: #111212; */
+ background-color: #13181f;
  color: #fff8d6;
 }
 
@@ -13,10 +14,14 @@ background-color: #111212;
 }
 
 #App .card {
- background-color: #222228;
+  background-color: #222233;
   width: 60%;
   margin-top: 5em;
+  margin-bottom: 5em;
   padding: 5em;
+  -webkit-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
 }
 
 #App h1{
