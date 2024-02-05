@@ -1,4 +1,3 @@
-import reactLogo from './assets/react.svg'
 import CodeBlock from './components/CodeBlock.tsx';
 import BulletedList from './components/BulletedList.tsx'
 
@@ -26,6 +25,15 @@ const CODE_TEXT = `
 */
 `;
 
+const WORK_EXPERIENCES = [
+"Jan 2024 - Now: Coding AI Trainer & Interviewer @ Scale AI & Remotasks",
+"Dec 2023 - Jan 2024: Software Engineer Intern / Research Assistant @ UMass Boston",
+"Sep 2023 - Dec 2023: Software Engineer Intern @ PressKit.ai",
+"Jul 2023 - Aug 2023: Web Development Mentor @ Innovators for Purpose",
+"Jun 2023 - Sep 2023: Software Engineer Intern / Research Assistant @ UMass Boston",
+"Feb 2023 - May 2023: Teaching Assistant for Intro to Computer Science (CS110) @ UMass Boston"
+]
+
 function App() {
 
   return (
@@ -36,6 +44,7 @@ function App() {
         <p>
         Here are a brief list of my work experiences:
         </p>
+        <BulletedList items={WORK_EXPERIENCES}/>
         <CodeBlock text={CODE_TEXT} doScroll={true}/>
       </div>
     </div>
