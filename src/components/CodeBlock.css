@@ -1,7 +1,11 @@
 
 .CodeBlock{
-  white-space: pre-wrap;
   width: 100%;
   color: #88eeee;
 }
 
+.CodeBlock code{
+  white-space: pre-wrap;
+  overflow-x: auto;
+  display: block;
+}

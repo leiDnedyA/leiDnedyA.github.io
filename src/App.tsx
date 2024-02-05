@@ -2,7 +2,7 @@ import reactLogo from './assets/react.svg'
 import CodeBlock from './components/CodeBlock.tsx';
 import BulletedList from './components/BulletedList.tsx'
 
-const codeText = `
+const CODE_TEXT = `
 /**
 *   /$$$$$$                  /$$                    
 *  /$$__  $$                | $$                    
@@ -36,7 +36,7 @@ function App() {
         <p>
         Here are a brief list of my work experiences:
         </p>
-        <CodeBlock text={codeText} doScroll={true}/>
+        <CodeBlock text={CODE_TEXT} doScroll={true}/>
       </div>
     </div>
   )

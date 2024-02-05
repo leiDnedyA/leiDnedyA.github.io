@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './CodeBlock.css'
 
 const TYPING_DELAY_MILLISECONDS = 5;
@@ -19,13 +19,15 @@ function CodeBlock(props: {text: string, doScroll?: boolean}) {
   }
 
   return (
-        <code className="CodeBlock">
-        {
-          props.doScroll === true ?
-          props.text.slice(0, textEnd) :
-          props.text
-        }
-        </code>
+        <div className="CodeBlock">
+          <code>
+          {
+            props.doScroll === true ?
+            props.text.slice(0, textEnd) :
+            props.text
+          }
+          </code>
+        </div>
   )
 }
 
