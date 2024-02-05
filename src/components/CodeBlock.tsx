@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import './CodeBlock.css'
 
 const TYPING_DELAY_MILLISECONDS = 5;
 
@@ -7,7 +8,6 @@ function CodeBlock(props: {text: string, doScroll?: boolean}) {
 
   if (props.doScroll === true) {
     const timeout = setTimeout(() => {
-      console.log('tick')
       setTextEnd((curr) => {
         if (curr >= props.text.length) {
           clearTimeout(timeout);
@@ -19,7 +19,7 @@ function CodeBlock(props: {text: string, doScroll?: boolean}) {
   }
 
   return (
-        <code>
+        <code className="CodeBlock">
         {
           props.doScroll === true ?
           props.text.slice(0, textEnd) :
