@@ -1,0 +1,33 @@
+html, body {
+ margin: 0;
+ padding: 0;
+ font-family: monospace;
+background-color: #111212;
+ color: #fff8d6;
+}
+
+#App {
+  display: flex;
+  flex-direction: vertical;
+  justify-content: center;
+}
+
+#App .card {
+ background-color: #222228;
+  width: 60%;
+  margin-top: 5em;
+  padding: 5em;
+}
+
+#App h1{
+  font-weight: normal;
+}
+
+#App h2{
+  font-weight: normal;
+}
+
+#App code{
+  white-space: pre-wrap;
+  width: 100%
+}
