@@ -34,6 +34,24 @@ const WORK_EXPERIENCES = [
 "Feb 2023 - May 2023: Teaching Assistant for Intro to Computer Science (CS110) @ UMass Boston"
 ]
 
+const TECHNOLOGIES = [
+"JavaScript & TypeScript",
+"React",
+"Node.js",
+"Python",
+"Bash & Linux/Unix Terminal",
+"C",
+"OCaml",
+"Racket",
+];
+
+const SOCIAL_LINKS = [
+"https://github.com/leiDnedyA/",
+"https://www.linkedin.com/in/ayden-diel-9b0972191/"
+];
+
+const RESUME_URL = "./resume.pdf";
+
 function App() {
 
   return (
@@ -42,9 +60,23 @@ function App() {
         <h1>Hi, I'm Ayden!</h1>
         <h2>CS Student @ UMass Boston, incoming SWE Intern @ Fidelity</h2>
         <p>
-        Here are a brief list of my work experiences:
+          Here are a brief list of my work experiences:
         </p>
         <BulletedList items={WORK_EXPERIENCES}/>
+        <p>
+          These are some of the technologies that I have experience with:
+        </p>
+        <BulletedList items={TECHNOLOGIES}/>
+        <p>
+          Follow me on LinkedIn & GitHub :)
+        </p>
+        <BulletedList items={SOCIAL_LINKS} clickable/>
+        <button className="resume-btn" onClick={() => {
+          const result = window.open(RESUME_URL, '_blank');
+          if (result !== null) {
+            result.focus();
+          }
+        }}>My Resume</button>
         <CodeBlock text={CODE_TEXT} doScroll={true}/>
       </div>
     </div>

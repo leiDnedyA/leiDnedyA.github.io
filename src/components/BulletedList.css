@@ -1,0 +1,12 @@
+.BulletedList a:link {
+  color: #99cccc;
+}
+
+.BulletedList a:visited {
+  color: #779999;
+}
+
+.BulletedList a:hover {
+  color: #88eeee;
+}
+

@@ -2,8 +2,8 @@ html, body {
  margin: 0;
  padding: 0;
  font-family: monospace;
- /* background-color: #111212; */
- background-color: #13181f;
+ background-color: rgb(8, 20, 35);
+ font-size: 1.1em;
  color: #fff8d6;
 }
 
@@ -19,9 +19,9 @@ html, body {
   margin-top: 5em;
   margin-bottom: 5em;
   padding: 5em;
-  -webkit-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 8px 0px rgba(0,0,30,0.75);
 }
 
 #App h1{
@@ -30,4 +30,19 @@ html, body {
 
 #App h2{
   font-weight: normal;
+}
+
+#App .resume-btn{
+  border: none;
+  font-size: 1em;
+  padding: 8px 50px;
+  margin: 5px;
+  background-color: #ee3345;
+  color: #fff8d6;
+  font-family: monospace;
+}
+
+#App .resume-btn:hover{
+  background-color: #bb2233;
+  cursor: pointer;
 }
