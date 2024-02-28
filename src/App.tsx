@@ -58,7 +58,7 @@ function App() {
     <div id="App">
       <div className="card">
         <h1>Hi, I'm Ayden!</h1>
-        <h2>CS Student @ UMass Boston, incoming SWE Intern @ Fidelity</h2>
+        <h2>CS Student @ UMass Boston, President of UMB CS Club</h2>
         <p>
           Here are a brief list of my work experiences:
         </p>
