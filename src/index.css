@@ -1,48 +1,15 @@
 html, body {
  margin: 0;
  padding: 0;
- font-family: monospace;
- background-color: rgb(8, 20, 35);
- font-size: 1.1em;
- color: #fff8d6;
+ font-family: Roboto monospace;
+ /* background-color: rgb(8, 20, 35); */
+ /* font-size: 1.1em; */
+ /* color: #fff8d6; */
 }
 
 #App {
   display: flex;
-  flex-direction: vertical;
-  justify-content: center;
-}
-
-#App .card {
-  background-color: #222233;
-  width: 60%;
-  margin-top: 5em;
-  margin-bottom: 5em;
-  padding: 5em;
-  -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 5px 8px 0px rgba(0,0,30,0.75);
-}
-
-#App h1{
-  font-weight: normal;
-}
-
-#App h2{
-  font-weight: normal;
-}
-
-#App .resume-btn{
-  border: none;
-  font-size: 1em;
-  padding: 8px 50px;
-  margin: 5px;
-  background-color: #ee3345;
-  color: #fff8d6;
-  font-family: monospace;
-}
-
-#App .resume-btn:hover{
-  background-color: #bb2233;
-  cursor: pointer;
+  flex-direction: column;
+  /* justify-content: center; */
+  margin: 15px;
 }
