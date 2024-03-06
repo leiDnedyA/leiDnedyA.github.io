@@ -40,25 +40,25 @@ function App() {
           I'm a CS Student @ UMass Boston, President of UMass Boston CS Club
         </Typography>
         <Divider/>
-      <Typography variant="subtitle1">
-        Here are some of the work experiences I've had!
-      </Typography>
-      <WorkTimeline />
-      <p>
-        These are some of the technologies that I have experience with:
-      </p>
-      <SkillsList />
-      <p>
-        Follow me on LinkedIn & GitHub :)
-      </p>
-      <BulletedList items={SOCIAL_LINKS} clickable/>
-      <Button onClick={() => {
-        const result = window.open(RESUME_URL, '_blank');
-        if (result !== null) {
-          result.focus();
-        }
-      }}>My Resume</Button>
-    
+        <Typography variant="subtitle1">
+          Here are some of the work experiences I've had!
+        </Typography>
+        <WorkTimeline />
+        <p>
+          These are some of the technologies that I have experience with:
+        </p>
+        <SkillsList />
+        <p>
+          Follow me on LinkedIn & GitHub :)
+        </p>
+        <BulletedList items={SOCIAL_LINKS} clickable/>
+        <Button onClick={() => {
+          const result = window.open(RESUME_URL, '_blank');
+          if (result !== null) {
+            result.focus();
+          }
+        }}>My Resume</Button>
+      
       </Box>
     </div>
   )
