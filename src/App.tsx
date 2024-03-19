@@ -7,17 +7,6 @@ import BulletedList from './components/BulletedList.tsx'
 import WorkTimeline from './components/WorkTimeline.tsx'
 import SkillsList from './components/SkillsList.tsx'
 
-const TECHNOLOGIES = [
-"JavaScript & TypeScript",
-"React",
-"Node.js",
-"Python",
-"Bash & Linux/Unix Terminal",
-"C",
-"OCaml",
-"Racket",
-];
-
 const SOCIAL_LINKS = [
 "https://github.com/leiDnedyA/",
 "https://www.linkedin.com/in/ayden-diel-9b0972191/"
