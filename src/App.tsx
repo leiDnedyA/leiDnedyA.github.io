@@ -3,7 +3,6 @@ import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import { Box, Link, Tooltip } from '@mui/material';
 
-import BulletedList from './components/BulletedList.tsx'
 import WorkTimeline from './components/WorkTimeline.tsx'
 import SkillsList from './components/SkillsList.tsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
