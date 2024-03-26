@@ -11,7 +11,7 @@ function BackgroundSpotlight() {
       if (event.pageY >= blurHeight) {
         setOpacity(0);
       } else{
-        setOpacity((blurHeight - event.pageY) / blurHeight);
+        setOpacity(Math.pow((blurHeight - event.pageY) / blurHeight, 1));
       }
     }, []);
 
@@ -23,12 +23,17 @@ function BackgroundSpotlight() {
     });
 
   return <>
-    <div className="blob" style={{
-      left: position[0],
-      top: position[1],
-      opacity: opacity
-    }}></div>
-    <div className="blur"></div>
+    {window.innerWidth > 900 ?
+      <>
+        <div className="blob" style={{
+          left: position[0],
+          top: position[1],
+          opacity: opacity
+        }}></div>
+        <div className="blur"></div>
+      </> :
+      <></>
+    }
   </>;
 }
 
