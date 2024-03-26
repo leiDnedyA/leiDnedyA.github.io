@@ -6,7 +6,6 @@ import { Box, Link, Tooltip } from '@mui/material';
 import WorkTimeline from './components/WorkTimeline.tsx'
 import SkillsList from './components/SkillsList.tsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import BackgroundSpotlight from './components/BackgroundSpotlight.tsx';
 
 const SOCIAL_LINKS = {
   github: "https://github.com/leiDnedyA/",
@@ -19,7 +18,6 @@ function App() {
 
   return (
     <div id="App">
-      <BackgroundSpotlight />
       <Box component="section" sx={{
         display: "flex",
         flexDirection: "column",

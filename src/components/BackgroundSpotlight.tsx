@@ -3,9 +3,16 @@ import './styles/BackgroundSpotlight.css'
 
 function BackgroundSpotlight() {
   const [position, setPosition] = useState([0, 0]);
+  const [opacity, setOpacity] = useState(100);
 
   const mouseMoveCallback = useCallback((event: MouseEvent) => {
-      setPosition([event.x, event.y])
+      setPosition([event.pageX, event.pageY]);
+      const blurHeight = window.innerHeight - 200;
+      if (event.pageY >= blurHeight) {
+        setOpacity(0);
+      } else{
+        setOpacity((blurHeight - event.pageY) / blurHeight);
+      }
     }, []);
 
   useEffect(() => {
@@ -15,10 +22,14 @@ function BackgroundSpotlight() {
       }
     });
 
-  return <div className="BackgroundSpotlight" style={{
-    left: position[0],
-    top: position[1]
-  }}></div>;
+  return <>
+    <div className="blob" style={{
+      left: position[0],
+      top: position[1],
+      opacity: opacity
+    }}></div>
+    <div className="blur"></div>
+  </>;
 }
 
 export default BackgroundSpotlight;

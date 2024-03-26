@@ -4,6 +4,7 @@ import App from './App.tsx'
 import './index.css'
 import CssBaseline from '@mui/material/CssBaseline'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import BackgroundSpotlight from './components/BackgroundSpotlight.tsx';
 
 
 /* Font stuff */
@@ -31,6 +32,8 @@ const theme = createTheme({
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
+    <BackgroundSpotlight />
+
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <App />
