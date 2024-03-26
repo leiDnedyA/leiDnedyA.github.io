@@ -2,8 +2,8 @@ import { useCallback, useEffect, useState } from 'react';
 import './styles/BackgroundSpotlight.css'
 
 function BackgroundSpotlight() {
-  const [position, setPosition] = useState([0, 0]);
-  const [opacity, setOpacity] = useState(100);
+  const [position, setPosition] = useState([window.innerWidth / 2, 0]);
+  const [opacity, setOpacity] = useState(.3);
 
   const mouseMoveCallback = useCallback((event: MouseEvent) => {
       setPosition([event.pageX, event.pageY]);
