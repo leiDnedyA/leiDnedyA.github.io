@@ -12,12 +12,25 @@ html, body {
 }
 
 #App {
-  width: 60%;
+  width: 50%;
   margin: 4em 0;
 }
 
-@media (max-width: 1500px) {
+.header-text {
+  text-align: center;
+}
+
+.download-button-icon {
+  margin-left: 5px;
+  transition: margin-left 200ms ease-in-out;
+}
+
+.download-button:hover > .download-button-icon {
+  margin-left: 10px;
+}
+
+@media (max-width: 700px) {
   #App {
-    width: 50%;
+    width: 80%;
   }
 }

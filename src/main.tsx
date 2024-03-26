@@ -21,7 +21,11 @@ library.add(fab, fas, faReact);
 /* Theme stuff */
 const theme = createTheme({
   palette: {
-    mode: "dark"
+    mode: "dark",
+    primary: {
+      main: "#8db"
+    }
+    
   }
 });
 
