@@ -23,7 +23,7 @@ function WorkTimeline() {
       {
         WORK_EXPERIENCES.map((curr, i, arr) => {
             return (
-      <TimelineItem>
+      <TimelineItem key={i}>
         <TimelineOppositeContent color="text.secondary">{curr[0]}</TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
