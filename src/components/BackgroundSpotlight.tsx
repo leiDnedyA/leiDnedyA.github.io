@@ -9,10 +9,10 @@ function BackgroundSpotlight() {
   const [blurHeight, setBlurHeight] = useState(window.innerWidth);
 
   const mouseMoveCallback = useCallback((event: MouseEvent) => {
-      if (event.pageY + DIAGONAL_LENGTH < blurHeight) {
+      if (event.pageY + DIAGONAL_LENGTH < document.body.scrollHeight) {
         setPosition([event.pageX, event.pageY]);
       } else{
-        setPosition([event.pageX, blurHeight - DIAGONAL_LENGTH]);
+        setPosition([event.pageX, document.body.scrollHeight - DIAGONAL_LENGTH]);
       }
     }, []);
 
