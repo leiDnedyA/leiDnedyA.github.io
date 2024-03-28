@@ -30,7 +30,7 @@ function BackgroundSpotlight() {
         <div className="blob" style={{
           left: position[0],
           top: position[1],
-          opacity: .3
+          opacity: 1
         }}></div>
       </> :
       <></>
