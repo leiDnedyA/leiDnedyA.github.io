@@ -12,7 +12,8 @@ const WORK_EXPERIENCES = [
   ["Jul 2023 - Aug 2023", "Web Development Mentor @ Innovators for Purpose"],
   ["Sep 2023 - Dec 2023", "Software Engineer Intern @ PressKit.ai"],
   ["Dec 2023 - Jan 2024", "Software Engineer Intern / Research Assistant @ UMass Boston"],
-  ["Jan 2024 - Now", "Coding AI Trainer & Interviewer @ Scale AI & Remotasks"],
+  ["Jan 2024 - Apr 2024", "Coding AI Trainer & Interviewer @ Scale AI & Remotasks"],
+  ["Apr 2024 - May 2024", "Fullstack Engineer @ DataNext Solutions / Megaship.ai"]
 ];
 
 // https://mui.com/material-ui/react-timeline/
