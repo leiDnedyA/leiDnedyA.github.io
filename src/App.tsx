@@ -34,7 +34,7 @@ function App() {
             <Typography variant="h2" className="header-text">Hi, I'm Ayden! 💻</Typography>
           </Tooltip>
           <Typography variant="h5" className="header-text">
-            I'm a CS Student @ UMass Boston, President of UMass Boston CS Club
+            I'm a SWE Intern @ Fidelity and a CS Student @ UMass Boston!
           </Typography>
           <Button className="download-button" onClick={() => {
             const result = window.open(RESUME_URL, '_blank');
