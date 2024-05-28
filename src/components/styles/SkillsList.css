@@ -6,8 +6,40 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  gap: 8px;
 }
 
 .list-item:hover {
   background-color: "#000" !important;
+}
+
+.skill-icon {
+  transition: gap 300ms;
+  display: flex;
+  justify-content: center;
+  width: -webkit-fill-available;
+  gap: 2px;
+}
+
+.list-item:hover .skill-icon {
+  transition: gap 300ms;
+  gap: 10px;
+}
+
+.icon-row {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .skills-list {
+    width: 90%;
+  }
+
+  .skill-icon {
+    transition: none;
+    gap: 8px;
+  }
+
 }
