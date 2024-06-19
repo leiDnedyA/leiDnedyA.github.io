@@ -31,7 +31,7 @@ function App() {
           gap: "15px"
         }}>
           <Tooltip title="Hello!">
-            <Typography variant="h2" className="header-text">Hi, I'm Ayden! 💻</Typography>
+            <Typography variant="h2" className="header-text"><span className="fake-tag-text">{'<h1>'}</span>Hi, I'm Ayden! 💻<span className="fake-tag-text">{'</h1>'}</span></Typography>
           </Tooltip>
           <Typography variant="h5" className="header-text">
             I'm a SWE Intern @ Fidelity and a CS Student @ UMass Boston!
@@ -44,12 +44,15 @@ function App() {
           }}>My Resume <div className="download-button-icon"><FontAwesomeIcon icon={["fas", "caret-down"]}/></div></Button>
         </Box>
         <Divider/>
+        <Box sx={{ marginTop: "10px" }}></Box>
         <Typography variant="h5" className="header-text" >
-          Here are some of the work experiences I've had!
+          <span className="fake-tag-text">{'<h2>'}</span>Here are some of the work experiences I've had!<span className="fake-tag-text">{'</h2>'}</span>
         </Typography>
         <WorkTimeline />
+        <Divider/>
+        <Box sx={{ marginTop: "10px" }}></Box>
         <Typography variant="h5" className="header-text">
-          Here are some technologies I like to work with!
+          <span className="fake-tag-text">{'<h2>'}</span>Here are some technologies I like to work with!<span className="fake-tag-text">{'</h2>'}</span>
         </Typography>
         <SkillsList />
         <Box sx={{
@@ -58,6 +61,7 @@ function App() {
           alignItems: "center",
         }}>
           <Typography>
+          <span className="fake-tag-text">{'<p>'}</span>
           {"Let's connect :) | "}
             <Link href={SOCIAL_LINKS.github} underline="always">
               {'Github '}
@@ -68,6 +72,7 @@ function App() {
               {'LinkedIn '}
               <FontAwesomeIcon icon={["fab", "linkedin"]}/>
             </Link>
+          <span className="fake-tag-text">{'</p>'}</span>
           </Typography>
         </Box>
       

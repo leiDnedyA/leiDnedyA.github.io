@@ -12,7 +12,7 @@ const WORK_EXPERIENCES = [
   ["Dec 2023 - Jan 2024", "Software Engineer Intern / Research Assistant @ UMass Boston", "👨‍🎓"],
   ["Jan 2024 - Apr 2024", "Coding AI Trainer & Interviewer @ Scale AI & Remotasks", "🤖"],
   ["Apr 2024 - Jun 2024", "Fullstack Engineer @ DataNext Solutions / Megaship.ai", "💻"],
-  ["Jun 2024 - Now", "Software Engineer Intern @ Fidelity Investments", "📈"]
+  ["Jun 2024 - Now", "Software Engineer Intern @ Fidelity Investments", "💸"]
 ];
 
 // https://mui.com/material-ui/react-timeline/
