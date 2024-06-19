@@ -19,22 +19,24 @@ const WORK_EXPERIENCES = [
 
 function WorkTimeline() {
   return (
-    <Timeline position="alternate">
+    <Timeline style={{ "cursor": "default" }} position="alternate">
       {
         WORK_EXPERIENCES.map((curr, i, arr) => {
-            return (
-      <TimelineItem key={i}>
-        <TimelineOppositeContent color="text.secondary">{curr[0]}</TimelineOppositeContent>
-        <TimelineSeparator>
-          <p style={{margin: '3px', padding: 0, fontSize: '1.8rem'}}>{curr[2]}</p>
-          {i !== arr.length - 1 ?
-          <TimelineConnector /> : null
-          }
-        </TimelineSeparator>
-        <TimelineContent>{curr[1]}</TimelineContent>
-      </TimelineItem>
-            );
-          })
+          return (
+            <TimelineItem key={i}>
+              <TimelineOppositeContent color="text.secondary">{curr[0]}</TimelineOppositeContent>
+              <TimelineSeparator>
+                <p style={{
+                  margin: '3px', padding: 0, fontSize: '1.8rem'
+                }}>{curr[2]}</p>
+                {i !== arr.length - 1 ?
+                  <TimelineConnector /> : null
+                }
+              </TimelineSeparator>
+              <TimelineContent>{curr[1]}</TimelineContent>
+            </TimelineItem>
+          );
+        })
       }
     </Timeline>
   );

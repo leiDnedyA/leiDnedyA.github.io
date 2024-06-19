@@ -34,22 +34,24 @@ function App() {
             <Typography variant="h2" className="header-text"><span className="fake-tag-text">{'<h1>'}</span>Hi, I'm Ayden! 💻<span className="fake-tag-text">{'</h1>'}</span></Typography>
           </Tooltip>
           <Typography variant="h5" className="header-text">
+            <span className="fake-tag-text">{'<p>'}</span>
             I'm a SWE Intern @ Fidelity and a CS Student @ UMass Boston!
+            <span className="fake-tag-text">{'</p>'}</span>
           </Typography>
           <Button className="download-button" onClick={() => {
             const result = window.open(RESUME_URL, '_blank');
             if (result !== null) {
               result.focus();
             }
-          }}>My Resume <div className="download-button-icon"><FontAwesomeIcon icon={["fas", "caret-down"]}/></div></Button>
+          }}>My Resume <div className="download-button-icon"><FontAwesomeIcon icon={["fas", "caret-down"]} /></div></Button>
         </Box>
-        <Divider/>
+        <Divider />
         <Box sx={{ marginTop: "10px" }}></Box>
         <Typography variant="h5" className="header-text" >
           <span className="fake-tag-text">{'<h2>'}</span>Here are some of the work experiences I've had!<span className="fake-tag-text">{'</h2>'}</span>
         </Typography>
         <WorkTimeline />
-        <Divider/>
+        <Divider />
         <Box sx={{ marginTop: "10px" }}></Box>
         <Typography variant="h5" className="header-text">
           <span className="fake-tag-text">{'<h2>'}</span>Here are some technologies I like to work with!<span className="fake-tag-text">{'</h2>'}</span>
@@ -61,21 +63,21 @@ function App() {
           alignItems: "center",
         }}>
           <Typography>
-          <span className="fake-tag-text">{'<p>'}</span>
-          {"Let's connect :) | "}
+            <span className="fake-tag-text">{'<p>'}</span>
+            {"Let's connect :) | "}
             <Link href={SOCIAL_LINKS.github} underline="always">
               {'Github '}
-              <FontAwesomeIcon icon={["fab", "github"]}/>
+              <FontAwesomeIcon icon={["fab", "github"]} />
             </Link>
             {" | "}
             <Link href={SOCIAL_LINKS.linkedin} underline="always">
               {'LinkedIn '}
-              <FontAwesomeIcon icon={["fab", "linkedin"]}/>
+              <FontAwesomeIcon icon={["fab", "linkedin"]} />
             </Link>
-          <span className="fake-tag-text">{'</p>'}</span>
+            <span className="fake-tag-text">{'</p>'}</span>
           </Typography>
         </Box>
-      
+
       </Box>
     </div>
   )
