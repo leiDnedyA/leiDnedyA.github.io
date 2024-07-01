@@ -23,6 +23,7 @@ function BackgroundSpotlight() {
   useEffect(() => {
       document.addEventListener('mousemove', mouseMoveCallback);
       window.addEventListener('load', windowLoadCallback);
+      window.addEventListener('resize', windowLoadCallback);
       return () => {
         document.removeEventListener('mousemove', mouseMoveCallback);
         window.removeEventListener('load', windowLoadCallback);
