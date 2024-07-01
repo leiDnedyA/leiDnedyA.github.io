@@ -31,12 +31,10 @@ function App() {
           gap: "15px"
         }}>
           <Tooltip title="Hello!">
-            <Typography variant="h2" className="header-text"><span className="fake-tag-text">{'<h1>'}</span>Hi, I'm Ayden! 💻<span className="fake-tag-text">{'</h1>'}</span></Typography>
+            <Typography variant="h2" className="header-text">Hi, I'm Ayden! 💻</Typography>
           </Tooltip>
           <Typography variant="h5" className="header-text">
-            <span className="fake-tag-text">{'<p>'}</span>
             I'm a SWE Intern @ Fidelity and a CS Student @ UMass Boston!
-            <span className="fake-tag-text">{'</p>'}</span>
           </Typography>
           <Button className="download-button" onClick={() => {
             const result = window.open(RESUME_URL, '_blank');
@@ -48,13 +46,13 @@ function App() {
         <Divider />
         <Box sx={{ marginTop: "10px" }}></Box>
         <Typography variant="h5" className="header-text" >
-          <span className="fake-tag-text">{'<h2>'}</span>Here are some of the work experiences I've had!<span className="fake-tag-text">{'</h2>'}</span>
+          Here are some of the work experiences I've had!
         </Typography>
         <WorkTimeline />
         <Divider />
         <Box sx={{ marginTop: "10px" }}></Box>
         <Typography variant="h5" className="header-text">
-          <span className="fake-tag-text">{'<h2>'}</span>Here are some technologies I like to work with!<span className="fake-tag-text">{'</h2>'}</span>
+          Here are some technologies I like to work with!
         </Typography>
         <SkillsList />
         <Box sx={{
@@ -63,7 +61,6 @@ function App() {
           alignItems: "center",
         }}>
           <Typography>
-            <span className="fake-tag-text">{'<p>'}</span>
             {"Let's connect :) | "}
             <Link href={SOCIAL_LINKS.github} underline="always">
               {'Github '}
@@ -74,7 +71,6 @@ function App() {
               {'LinkedIn '}
               <FontAwesomeIcon icon={["fab", "linkedin"]} />
             </Link>
-            <span className="fake-tag-text">{'</p>'}</span>
           </Typography>
         </Box>
 
